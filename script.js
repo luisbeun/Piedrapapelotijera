@@ -10,15 +10,24 @@ if (juegalacompu === 0) {
   valorcompu= 'rock'
 }
 if (juegalacompu === 1){
-  valorcompu = 'paper'
+  valorcompu = 'papers'
 }
 else{
   valorcompu='scissors'
 }
 console.log (valorcompu)
-  function getHumanChoice() {
+
+
+
     let sign = prompt("What's your Choice?");
     if (sign.toLowerCase() === "rock") {
-        alert("You chose rock!");
-      }
-  }
+        alert("You chose rock!");}
+    if (sign.toLocaleLowerCase() === "papers"){
+      alert ("You chose papers!");
+    }
+    if (sign.toLocaleLowerCase() === "scissors") {
+      alert ("You chose scissors!");
+    }
+    else{
+      alert ("You must choose rock, papers or scissors!")
+    }
