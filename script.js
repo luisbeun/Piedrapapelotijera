@@ -15,6 +15,7 @@ function getHumanChoice(question = "Enter 'rock', 'paper' or 'scissor'") {
       return choice;
   }
 }
+
 function playGame() {
     console.log(`GAME HAS STARTED!`)
     let humanScore = 0;
@@ -55,7 +56,7 @@ function playGame() {
         playRound(getHumanChoice(),getComputerChoice());
     }
     if(humanScore > computerScore){
-        console.log(`GAME OVER!! YOU wON!`);
+        console.log(`GAME OVER!! YOU WON!`);
     }
     else if(humanScore < computerScore){
         console.log(`GAME OVER! YOU lOSE`)
